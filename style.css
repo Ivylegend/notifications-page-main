@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url(assets/fonts/static/PlusJakartaSans-VariableFont_wght.ttf)
+    format("truetype");
+}
+
+body {
+  background-color: hsl(210, 60%, 98%);
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.container {
+  background-color: white;
+  padding: 20px;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+h2 span {
+  background-color: hsl(219, 85%, 26%);
+  padding: 1px 10px;
+  border-radius: 5px;
+  color: white;
+  font-weight: 100;
+}
+
+.read {
+  color: hsl(219, 12%, 42%);
+}
+
+.read:hover {
+  color: hsl(219, 85%, 26%);
+  cursor: pointer;
+}
+
+.notifs {
+  background-color: hsl(210, 60%, 98%);
+  border-radius: 5px;
+  margin: 10px auto;
+  padding: 20px;
+  font-size: 1rem;
+  display: flex;
+}
+
+.unread {
+  background-color: hsl(211, 68%, 94%);
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: hsl(1, 90%, 64%);
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.emp {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.one:hover {
+  color: hsl(219, 85%, 26%);
+}
+
+.two {
+  color: hsl(219, 85%, 26%);
+}
+
+.notifs img {
+  width: 40px;
+  margin-right: 15px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.name {
+  font-weight: bolder;
+  color: hsl(224, 21%, 14%);
+}
+
+.name:hover {
+  color: hsl(219, 85%, 26%);
+  cursor: pointer;
+}
+
+p {
+  color: hsl(219, 12%, 42%);
+  line-height: 1.2;
+}
+
+.time {
+  color: hsl(219, 14%, 63%);
+  display: block;
+  margin-top: 5px;
+}
+
+.inner-text {
+  color: hsl(219, 12%, 42%);
+  line-height: 1.2;
+  font-size: 15px;
+  padding: 10px;
+  border: 1px solid hsl(219, 14%, 63%);
+  margin: 20px;
+  border-radius: 5px;
+}
+
+.inner-text:hover {
+  background-color: hsl(205, 33%, 90%);
+  cursor: pointer;
+}
+
+.trans {
+  transition: all 0.5s;
+}
+
+@media (min-width: 600px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .container {
+    width: 600px;
+    margin: 50px auto;
+    border-radius: 5px;
+  }
+
+  .chess {
+    position: relative;
+    left: 100px;
+  }
+}
